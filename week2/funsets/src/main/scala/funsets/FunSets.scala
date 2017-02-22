@@ -92,7 +92,7 @@ object FunSets {
         union(result, loop(a + 1, f(a + 1), singletonSet(y)))
 
       else
-        union(Set(), loop(a + 1, f(a + 1), result))
+        union(result, loop(a + 1, f(a + 1), Set()))
     }
 
     loop(-bound, f(-bound), Set())
